@@ -31,7 +31,7 @@ export default function About() {
                 {/* About Section */}
                 <div className='flex gap-5'>
                     <img
-                        src="src/assets/Images/about1.webp"
+                        src="public/Images/about1.webp"
                         alt=""
                         className='size-80 w-1/2 rounded-lg shadow-md'
                     />
@@ -156,7 +156,7 @@ export default function About() {
                         </p>
                     </div>
                     <div>
-                        <img src="/src/assets/Images/alumini1.jpg" alt="" />
+                        <img src="/public/Images/alumini1.jpg" alt="" />
                     </div>
                 </div>
                 <div className="flex flex-col items-center mt-10">

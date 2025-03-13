@@ -16,7 +16,7 @@ export default function Navbar() {
             >
                 <h1 className="text-2xl font-bold">EduTeach</h1>
                 <ul className="hidden md:flex space-x-6">
-                    <li><a href="/" className="hover:underline">Home</a></li>
+                    <li><Link to="/" className="hover:underline">Home</Link></li>
                     {!isAboutPage && (
                         <>
                             <Link
@@ -39,7 +39,7 @@ export default function Navbar() {
                             </Link>
                         </>
                     )}
-                    <li><a href="/about" className="hover:underline">About</a></li>
+                    <li><Link to="/about" className="hover:underline">About</Link></li>
 
                 </ul>
                 <button className="md:hidden p-2 bg-white text-blue-600 rounded">☰</button>

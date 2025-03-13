@@ -31,7 +31,7 @@ export default function About() {
                 {/* About Section */}
                 <div className='flex gap-5'>
                     <img
-                        src="public/Images/about1.webp"
+                        src="public/about1.webp"
                         alt=""
                         className='size-80 w-1/2 rounded-lg shadow-md'
                     />
@@ -155,8 +155,8 @@ export default function About() {
                             <li>Professionals in over 15 countries, spreading the legacy of Edutech Pvt. Ltd..</li>
                         </p>
                     </div>
-                    <div>
-                        <img src="/public/Images/alumini1.jpg" alt="" />
+                    <div className='p-2 '>
+                        <img src="public/alumini1.jpg" alt="" className='rounded-md' />
                     </div>
                 </div>
                 <div className="flex flex-col items-center mt-10">

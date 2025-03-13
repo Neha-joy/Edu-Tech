@@ -6,18 +6,18 @@ import { useLocation } from "react-router-dom";
 
 export default function Landingpage() {
   const images = [
-    "public/Images/hero.webp",
-    "public/Images/hero2.jpg",
-    "public/Images/hero3.png"
+    "public/hero.webp",
+    "public/hero2.jpg",
+    "public/hero3.png"
   ];
 
   const testimonials = [
-    { name: "Rahul Sharma", message: "The courses were extremely helpful. I landed my first job thanks to EduTeach!", image: "public/Images/men1.jpg" },
-    { name: "Ananya Singh", message: "Great learning platform. Highly recommended for tech enthusiasts!", image: "public/Images/female1.jpg" },
-    { name: "George David", message: "Amazing content and practical projects helped me gain real experience.", image: "public/Images/men2.jpg" },
-    { name: "Asif muhammed", message: "The courses were extremely helpful. I landed my first job thanks to EduTeach!", image: "public/Images/male3.webp" },
-    { name: "Shabaeer Muhammed", message: "Great learning platform. Highly recommended for tech enthusiasts!", image: "public/Images/male4.jpg" },
-    { name: "Stena Vargeese", message: "Amazing content and practical projects helped me gain real experience.", image: "public/Images/female.avif" }
+    { name: "Rahul Sharma", message: "The courses were extremely helpful. I landed my first job thanks to EduTeach!", image: "public/men1.jpg" },
+    { name: "Ananya Singh", message: "Great learning platform. Highly recommended for tech enthusiasts!", image: "public/female1.jpg" },
+    { name: "George David", message: "Amazing content and practical projects helped me gain real experience.", image: "public/men2.jpg" },
+    { name: "Asif muhammed", message: "The courses were extremely helpful. I landed my first job thanks to EduTeach!", image: "public/male3.webp" },
+    { name: "Shabaeer Muhammed", message: "Great learning platform. Highly recommended for tech enthusiasts!", image: "public/male4.jpg" },
+    { name: "Stena Vargeese", message: "Amazing content and practical projects helped me gain real experience.", image: "public/female.avif" }
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -189,12 +189,12 @@ export default function Landingpage() {
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 px-6">
           {[
-            { name: "Python", img: "public/Images/Python.webp" },
-            { name: "Java", img: "public/Images/java.png" },
-            { name: "React", img: "public/Images/react.png" },
-            { name: "PHP", img: "public/Images/php.jpg" },
-            { name: "Data Science", img: "public/Images/datascience.webp" },
-            { name: "Business Analyst", img: "public/Images/business.jpg" }
+            { name: "Python", img: "public/Python.webp" },
+            { name: "Java", img: "public/java.png" },
+            { name: "React", img: "public/react.png" },
+            { name: "PHP", img: "public/php.jpg" },
+            { name: "Data Science", img: "public/datascience.webp" },
+            { name: "Business Analyst", img: "public/business.jpg" }
           ].map((course, index) => (
             <motion.div
               key={index}
@@ -306,7 +306,7 @@ export default function Landingpage() {
       {/* Contact Section */}
       <section id="contact" className="py-12 px-6 bg-gray-200 text-center relative">
         <img
-          src="public/Images/image1.jpg"
+          src="public/image1.jpg"
           alt="Contact Us"
           className="absolute inset-0 w-full h-full object-cover opacity-30"
         />

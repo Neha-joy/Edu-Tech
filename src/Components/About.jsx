@@ -3,7 +3,6 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recha
 import { FaBriefcase, FaSuitcase, FaHandshake, FaGlobe, FaBook, FaLaptopCode, FaUserGraduate, FaLightbulb, FaBullseye } from "react-icons/fa";
 import { SiTcs, SiWipro } from "react-icons/si";
 import { motion } from "framer-motion";
-import Navbar from './Navbar';
 import Footer from './Footer';
 const data = [
     { year: '2002', students: 100 },
@@ -25,17 +24,16 @@ export default function About() {
     };
     return (
         <div>
-            <Navbar />
             <h1 className='text-3xl text-blue-900 font-semibold p-2'>About Us - Edutech Pvt. Ltd</h1>
             <div className='p-4'>
                 {/* About Section */}
-                <div className='flex gap-5'>
+                <div className='flex flex-col md:flex-row gap-5'>
                     <img
                         src="public/about1.webp"
                         alt=""
-                        className='size-80 w-1/2 rounded-lg shadow-md'
+                        className='w-full md:w-1/2 rounded-lg shadow-md'
                     />
-                    <p className='text-gray-600 text-xl'>
+                    <p className='text-gray-600 text-lg md:text-xl'>
                         Established in 2002, Edutech Pvt. Ltd. has been a pioneering force in transforming
                         education through technology. Over the past two decades, we have built a solid reputation
                         as one of the most trusted educational institutes in Kerala, committed to delivering
@@ -44,7 +42,7 @@ export default function About() {
                 </div>
 
                 {/* Our Journey Section */}
-                <div className='grid grid-cols-2 gap-10 mt-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-10 mt-10'>
                     <div>
                         <h3 className='text-2xl text-blue-900 font-semibold mb-2'>Our Journey</h3>
                         <p className='text-gray-600 text-xl'>
@@ -62,7 +60,7 @@ export default function About() {
                     </div>
 
                     {/* Progress Chart */}
-                    <div className='shadow-lg p-4 bg-white rounded-lg'>
+                    <div className='shadow-lg p-4 bg-white rounded-lg min-w-[300px]'>
                         <h3 className='text-2xl text-blue-900 font-semibold mb-4'>Our Growth Over the Years</h3>
                         <ResponsiveContainer width="100%" height={300}>
                             <BarChart data={data}>
@@ -131,7 +129,7 @@ export default function About() {
                         transition={{ duration: 0.8 }}
                     >
                         <h3 className='text-2xl text-blue-900 font-semibold mb-2'>Our Achievements</h3>
-                        <ul className='text-gray-600 text-xl space-y-3'>
+                        <ul className='text-gray-600  md:text-xl space-y-3'>
                             <motion.li whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>✅ Over 22 years of excellence in the educational industry.</motion.li>
                             <motion.li whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>✅ Trained more than 50,000 students across various educational streams.</motion.li>
                             <motion.li whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>✅ Collaborated with top corporate companies for recruitment and training.</motion.li>
@@ -143,7 +141,7 @@ export default function About() {
                 </div>
 
                 {/* Our Aluminie */}
-                <div className='flex '>
+                <div className='flex flex-col md:flex-row gap-5'>
                     <div>
                         <h3 className='text-2xl text-blue-900 font-semibold mb-2'>Our Alumni Network</h3>
                         <p className='text-gray-600 text-xl'>

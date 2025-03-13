@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion,AnimatePresence } from "framer-motion";
-import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { useLocation } from "react-router-dom";
 
@@ -112,7 +111,6 @@ export default function Landingpage() {
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900  overflow-hidden">
-      <Navbar/>
       {/* Small Course Alert */}
       <AnimatePresence>
         {showOffer && (

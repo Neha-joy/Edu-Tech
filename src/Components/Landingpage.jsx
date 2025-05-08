@@ -169,7 +169,7 @@ export default function Landingpage() {
           whileHover={{ scale: 1.1 }}
           className="mt-6 px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-md hover:bg-gray-200 relative z-10"
         >
-          Get Started Today
+          Get Started Today join us
         </motion.button>
       </header>
 

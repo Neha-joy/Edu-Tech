@@ -183,7 +183,7 @@ export default function Landingpage() {
           viewport={{ once: true }}
           className="text-4xl font-extrabold mb-8 text-blue-900"
         >
-          Our Courses
+          Our Courses are
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 px-6">
           {[
